@@ -10,7 +10,7 @@ import (
 func main() {
 	syftReader := internal.Syft{}
 	var manager *Manager
-	syft, syftErr := syftReader.ReadJson("../testfiles/dependencies_go_real.json")
+	syft, syftErr := syftReader.ReadJson("../testfiles/dependencies_angular.json")
 
 	if syftErr != nil {
 		log.Print(syftErr)
@@ -22,7 +22,7 @@ func main() {
 	case strings.Contains(syft.Artifacts[0].Purl, "golang"):
 		manager = NewManager(handler.Go{})
 	case strings.Contains(syft.Artifacts[0].Purl, "npm"):
-		//manager := NewManager(handler.NPM{})
+		manager = NewManager(handler.Npm{})
 	}
 
 	err := manager.Run(syft)
