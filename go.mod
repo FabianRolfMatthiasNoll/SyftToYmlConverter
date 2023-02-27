@@ -21,6 +21,7 @@ require (
 )
 
 require (
+	github.com/TwiN/go-color v1.4.0
 	github.com/gammazero/workerpool v1.1.3
 	github.com/goccy/go-yaml v1.9.8
 	github.com/google/go-querystring v1.0.0 // indirect
