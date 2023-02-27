@@ -10,9 +10,9 @@ import (
 	"syfttoymlconverter/internal"
 	"syfttoymlconverter/internal/model"
 	"time"
-)
 
-type Nuget struct{}
+	"github.com/TwiN/go-color"
+)
 
 type Module struct {
 	Path    string // Import path, such as "github.com/mitchellh/golicense"
@@ -21,8 +21,8 @@ type Module struct {
 	Hash    string // Hash such as "h1:abcd1234"
 }
 
-// Structure of NUGET API Call https://api.nuget.org/v3/registration5-semver1/{PackageName LowerCase}/index.json
-type NugetAPI struct {
+// Structure of NUGET API Call https://api.nuget.org/v3/registration5-semver1/{PackageNameLowerCase}/index.json
+type Nuget struct {
 	ID              string    `json:"@id"`
 	Type            []string  `json:"@type"`
 	CommitID        string    `json:"commitId"`
@@ -167,16 +167,18 @@ func (Nuget) toModule(modules []Module) []model.Module {
 	return result
 }
 
-func (Nuget) SetRepoInfo(syft *internal.Syft, info *model.BuildInfo) {
+func (nuget Nuget) SetRepoInfo(syft *internal.Syft, info *model.BuildInfo) {
 	for i := range info.Modules {
 		module := &info.Modules[i]
-		url := Nuget.CreateAPILink(Nuget{}, syft.Artifacts[i].Name)
-		pkgData, err := Nuget.GetData(Nuget{}, url)
+		url := nuget.CreateAPILink(syft.Artifacts[i].Name)
+		fmt.Println("[", color.Colorize(color.Yellow, "Fetch"), "] Module: ", module.Path, "from: ", url)
+		pkgData, err := nuget.GetData(url)
 		if err != nil {
 			log.Print(err)
 		}
-		Nuget.SetInfoToModule(Nuget{}, module, pkgData)
+		nuget.SetInfoToModule(module, pkgData)
 	}
+	fmt.Println("[", color.Colorize(color.Green, "Succ"), "] All Modules were parsed ")
 }
 
 func (Nuget) GetData(url string) ([]byte, error) {
@@ -204,9 +206,11 @@ func (Nuget) GetData(url string) ([]byte, error) {
 	return body, nil
 }
 
-func (Nuget) SetInfoToModule(module *model.Module, pkgData []byte) {
-	api := NugetAPI{}
-	json.Unmarshal(pkgData, &api)
+func (api Nuget) SetInfoToModule(module *model.Module, pkgData []byte) {
+	err := json.Unmarshal(pkgData, &api)
+	if err != nil {
+		fmt.Println("[", color.Colorize(color.Red, "Err"), "] ", err)
+	}
 
 	//double iteration because big dependencies have multiple "sites"
 	//on most dependencies there is only one api.items but not always
@@ -235,69 +239,6 @@ func (Nuget) SetInfoToModule(module *model.Module, pkgData []byte) {
 		}
 	}
 }
-
-// func (NugetAPI) ConverseDataToStruct(body []byte, version string) (model.Library, error) {
-// 	api := NugetAPI{}
-// 	lib := model.Library{}
-// 	model := model.BuildInfo{}
-
-// 	//Map Data to NugetAPI struct
-// 	marshErr := json.Unmarshal(body, &api)
-// 	if marshErr != nil {
-// 		return model.Library{}, marshErr
-// 	}
-// 	//double iteration because big dependencies have multiple "sites"
-// 	//on most dependencies there is only one api.items but not always
-// 	for _, item := range api.Items {
-// 		for _, data := range item.Items {
-// 			if version == data.CatalogEntry.Version {
-// 				dep := data.CatalogEntry
-
-// 				//Microsofts package descriptions start with a summary and then have a ton of
-// 				//unimportant information. Thankfully Microsoft has a \n after the summary.
-// 				if strings.Contains(dep.Description, "\n") {
-// 					dep.Description = dep.Description[:strings.Index(dep.Description, "\n")]
-// 				}
-
-// 				//Some Microsoft packages that are older have the generall dot.net url and
-// 				//not the url to the actual project. So we just construct the url ourselves.
-// 				if dep.ProjectURL == "https://dot.net/" {
-// 					dep.ProjectURL = fmt.Sprintf("https://www.nuget.org/packages/%s", dep.ID)
-// 				}
-
-// 				lib.Source = dep.ProjectURL
-// 				lib.Release = dep.Published[:10]
-// 				lib.LibraryData = model.TableMainTemplate{
-// 					Manufacturer:   dep.Authors,
-// 					Software:       dep.ID,
-// 					Summary:        dep.Description,
-// 					Version:        dep.Version,
-// 					License:        dep.LicenseExpression,
-// 					Function:       data.Type,
-// 					Incorporated:   "Yes",
-// 					LevelOfConcern: "Minor",
-// 				}
-// 				lib.LibraryData.Answer1 = fmt.Sprintf(
-// 					answer1fmt,
-// 					lib.LibraryData.Manufacturer,
-// 					lib.LibraryData.Version,
-// 					lib.LibraryData.License,
-// 					lib.LibraryData.Summary,
-// 				)
-
-// 				// if len(dep.Parents) > 0 {
-// 				// 	lib.LibraryData.Answer4 = fmt.Sprintf(answer4Fmt, strings.Join(d.Parents, ", "))
-// 				// }
-
-// 				lib.LibraryData.Answer2 = answer2
-// 				lib.LibraryData.Answer3 = answer3
-// 				lib.LibraryData.Answer5 = answer5
-// 				lib.LibraryData.Answer6 = answer6
-// 			}
-// 		}
-// 	}
-// 	return lib, nil
-// }
 
 func (Nuget) CreateAPILink(packageName string) string {
 	packageName = strings.ToLower(packageName)
