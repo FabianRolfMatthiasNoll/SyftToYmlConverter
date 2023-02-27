@@ -1,0 +1,20 @@
+{
+  "name": "my-javascript-program",
+  "version": "1.0.0",
+  "description": "My JavaScript program",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.1",
+    "chai": "^4.3.4"
+  }
+}
