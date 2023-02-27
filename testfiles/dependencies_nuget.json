@@ -1,0 +1,433 @@
+{
+ "artifacts": [
+  {
+   "id": "9513a6ff66c43dbd",
+   "name": "ConsoleTables",
+   "version": "2.4.2",
+   "type": "dotnet",
+   "foundBy": "dotnet-deps-cataloger",
+   "locations": [
+    {
+     "path": "Burgerama Burger Shop App\\bin\\Debug\\net6.0\\Burgerama Burger Shop App.deps.json"
+    }
+   ],
+   "licenses": [],
+   "language": "dotnet",
+   "cpes": [
+    "cpe:2.3:a:ConsoleTables:ConsoleTables:2.4.2:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:dotnet/ConsoleTables@2.4.2",
+   "metadataType": "DotnetDepsMetadata",
+   "metadata": {
+    "name": "ConsoleTables",
+    "version": "2.4.2",
+    "path": "consoletables/2.4.2",
+    "sha512": "sha512-0SRFOWYCgFQ0RfAMof2DsGEJHI2YKquCA4X26kKyuG+MG+/2R3NRgRVEqXDMU7eVP69MGDzb1eg4i3/APlIfQg==",
+    "hashPath": "consoletables.2.4.2.nupkg.sha512"
+   }
+  },
+  {
+   "id": "376637fadf619744",
+   "name": "Microsoft.NETCore.Platforms",
+   "version": "1.1.0",
+   "type": "dotnet",
+   "foundBy": "dotnet-deps-cataloger",
+   "locations": [
+    {
+     "path": "Burgerama Burger Shop App\\bin\\Debug\\net6.0\\Burgerama Burger Shop App.deps.json"
+    }
+   ],
+   "licenses": [],
+   "language": "dotnet",
+   "cpes": [
+    "cpe:2.3:a:Microsoft.NETCore.Platforms:Microsoft.NETCore.Platforms:1.1.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:dotnet/Microsoft.NETCore.Platforms@1.1.0",
+   "metadataType": "DotnetDepsMetadata",
+   "metadata": {
+    "name": "Microsoft.NETCore.Platforms",
+    "version": "1.1.0",
+    "path": "microsoft.netcore.platforms/1.1.0",
+    "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+    "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+   }
+  },
+  {
+   "id": "248343ef469befea",
+   "name": "Microsoft.NETCore.Targets",
+   "version": "1.1.0",
+   "type": "dotnet",
+   "foundBy": "dotnet-deps-cataloger",
+   "locations": [
+    {
+     "path": "Burgerama Burger Shop App\\bin\\Debug\\net6.0\\Burgerama Burger Shop App.deps.json"
+    }
+   ],
+   "licenses": [],
+   "language": "dotnet",
+   "cpes": [
+    "cpe:2.3:a:Microsoft.NETCore.Targets:Microsoft.NETCore.Targets:1.1.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:dotnet/Microsoft.NETCore.Targets@1.1.0",
+   "metadataType": "DotnetDepsMetadata",
+   "metadata": {
+    "name": "Microsoft.NETCore.Targets",
+    "version": "1.1.0",
+    "path": "microsoft.netcore.targets/1.1.0",
+    "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
+    "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+   }
+  },
+  {
+   "id": "5181917f887e66ce",
+   "name": "Newtonsoft.Json",
+   "version": "13.0.1",
+   "type": "dotnet",
+   "foundBy": "dotnet-deps-cataloger",
+   "locations": [
+    {
+     "path": "Burgerama Burger Shop App\\bin\\Debug\\net6.0\\Burgerama Burger Shop App.deps.json"
+    }
+   ],
+   "licenses": [],
+   "language": "dotnet",
+   "cpes": [
+    "cpe:2.3:a:Newtonsoft.Json:Newtonsoft.Json:13.0.1:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:dotnet/Newtonsoft.Json@13.0.1",
+   "metadataType": "DotnetDepsMetadata",
+   "metadata": {
+    "name": "Newtonsoft.Json",
+    "version": "13.0.1",
+    "path": "newtonsoft.json/13.0.1",
+    "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+    "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+   }
+  },
+  {
+   "id": "c320d60ed0c3feae",
+   "name": "System.IO",
+   "version": "4.3.0",
+   "type": "dotnet",
+   "foundBy": "dotnet-deps-cataloger",
+   "locations": [
+    {
+     "path": "Burgerama Burger Shop App\\bin\\Debug\\net6.0\\Burgerama Burger Shop App.deps.json"
+    }
+   ],
+   "licenses": [],
+   "language": "dotnet",
+   "cpes": [
+    "cpe:2.3:a:System.IO:System.IO:4.3.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:dotnet/System.IO@4.3.0",
+   "metadataType": "DotnetDepsMetadata",
+   "metadata": {
+    "name": "System.IO",
+    "version": "4.3.0",
+    "path": "system.io/4.3.0",
+    "sha512": "sha512-3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
+    "hashPath": "system.io.4.3.0.nupkg.sha512"
+   }
+  },
+  {
+   "id": "e0b5c23707d1d419",
+   "name": "System.Reflection",
+   "version": "4.3.0",
+   "type": "dotnet",
+   "foundBy": "dotnet-deps-cataloger",
+   "locations": [
+    {
+     "path": "Burgerama Burger Shop App\\bin\\Debug\\net6.0\\Burgerama Burger Shop App.deps.json"
+    }
+   ],
+   "licenses": [],
+   "language": "dotnet",
+   "cpes": [
+    "cpe:2.3:a:System.Reflection:System.Reflection:4.3.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:dotnet/System.Reflection@4.3.0",
+   "metadataType": "DotnetDepsMetadata",
+   "metadata": {
+    "name": "System.Reflection",
+    "version": "4.3.0",
+    "path": "system.reflection/4.3.0",
+    "sha512": "sha512-KMiAFoW7MfJGa9nDFNcfu+FpEdiHpWgTcS2HdMpDvt9saK3y/G4GwprPyzqjFH9NTaGPQeWNHU+iDlDILj96aQ==",
+    "hashPath": "system.reflection.4.3.0.nupkg.sha512"
+   }
+  },
+  {
+   "id": "78c32dc0eb00159",
+   "name": "System.Reflection.Primitives",
+   "version": "4.3.0",
+   "type": "dotnet",
+   "foundBy": "dotnet-deps-cataloger",
+   "locations": [
+    {
+     "path": "Burgerama Burger Shop App\\bin\\Debug\\net6.0\\Burgerama Burger Shop App.deps.json"
+    }
+   ],
+   "licenses": [],
+   "language": "dotnet",
+   "cpes": [
+    "cpe:2.3:a:System.Reflection.Primitives:System.Reflection.Primitives:4.3.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:dotnet/System.Reflection.Primitives@4.3.0",
+   "metadataType": "DotnetDepsMetadata",
+   "metadata": {
+    "name": "System.Reflection.Primitives",
+    "version": "4.3.0",
+    "path": "system.reflection.primitives/4.3.0",
+    "sha512": "sha512-5RXItQz5As4xN2/YUDxdpsEkMhvw3e6aNveFXUn4Hl/udNTCNhnKp8lT9fnc3MhvGKh1baak5CovpuQUXHAlIA==",
+    "hashPath": "system.reflection.primitives.4.3.0.nupkg.sha512"
+   }
+  },
+  {
+   "id": "3efd9f768428f389",
+   "name": "System.Reflection.TypeExtensions",
+   "version": "4.3.0",
+   "type": "dotnet",
+   "foundBy": "dotnet-deps-cataloger",
+   "locations": [
+    {
+     "path": "Burgerama Burger Shop App\\bin\\Debug\\net6.0\\Burgerama Burger Shop App.deps.json"
+    }
+   ],
+   "licenses": [],
+   "language": "dotnet",
+   "cpes": [
+    "cpe:2.3:a:System.Reflection.TypeExtensions:System.Reflection.TypeExtensions:4.3.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:dotnet/System.Reflection.TypeExtensions@4.3.0",
+   "metadataType": "DotnetDepsMetadata",
+   "metadata": {
+    "name": "System.Reflection.TypeExtensions",
+    "version": "4.3.0",
+    "path": "system.reflection.typeextensions/4.3.0",
+    "sha512": "sha512-7u6ulLcZbyxB5Gq0nMkQttcdBTx57ibzw+4IOXEfR+sXYQoHvjW5LTLyNr8O22UIMrqYbchJQJnos4eooYzYJA==",
+    "hashPath": "system.reflection.typeextensions.4.3.0.nupkg.sha512"
+   }
+  },
+  {
+   "id": "85d58e0e1112933b",
+   "name": "System.Runtime",
+   "version": "4.3.0",
+   "type": "dotnet",
+   "foundBy": "dotnet-deps-cataloger",
+   "locations": [
+    {
+     "path": "Burgerama Burger Shop App\\bin\\Debug\\net6.0\\Burgerama Burger Shop App.deps.json"
+    }
+   ],
+   "licenses": [],
+   "language": "dotnet",
+   "cpes": [
+    "cpe:2.3:a:System.Runtime:System.Runtime:4.3.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:dotnet/System.Runtime@4.3.0",
+   "metadataType": "DotnetDepsMetadata",
+   "metadata": {
+    "name": "System.Runtime",
+    "version": "4.3.0",
+    "path": "system.runtime/4.3.0",
+    "sha512": "sha512-JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+    "hashPath": "system.runtime.4.3.0.nupkg.sha512"
+   }
+  },
+  {
+   "id": "94b1615f72a0f3d6",
+   "name": "System.Text.Encoding",
+   "version": "4.3.0",
+   "type": "dotnet",
+   "foundBy": "dotnet-deps-cataloger",
+   "locations": [
+    {
+     "path": "Burgerama Burger Shop App\\bin\\Debug\\net6.0\\Burgerama Burger Shop App.deps.json"
+    }
+   ],
+   "licenses": [],
+   "language": "dotnet",
+   "cpes": [
+    "cpe:2.3:a:System.Text.Encoding:System.Text.Encoding:4.3.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:dotnet/System.Text.Encoding@4.3.0",
+   "metadataType": "DotnetDepsMetadata",
+   "metadata": {
+    "name": "System.Text.Encoding",
+    "version": "4.3.0",
+    "path": "system.text.encoding/4.3.0",
+    "sha512": "sha512-BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
+    "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
+   }
+  },
+  {
+   "id": "7ac0e16386d0e777",
+   "name": "System.Threading.Tasks",
+   "version": "4.3.0",
+   "type": "dotnet",
+   "foundBy": "dotnet-deps-cataloger",
+   "locations": [
+    {
+     "path": "Burgerama Burger Shop App\\bin\\Debug\\net6.0\\Burgerama Burger Shop App.deps.json"
+    }
+   ],
+   "licenses": [],
+   "language": "dotnet",
+   "cpes": [
+    "cpe:2.3:a:System.Threading.Tasks:System.Threading.Tasks:4.3.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:dotnet/System.Threading.Tasks@4.3.0",
+   "metadataType": "DotnetDepsMetadata",
+   "metadata": {
+    "name": "System.Threading.Tasks",
+    "version": "4.3.0",
+    "path": "system.threading.tasks/4.3.0",
+    "sha512": "sha512-LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
+    "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
+   }
+  }
+ ],
+ "artifactRelationships": [
+  {
+   "parent": "d092bea41c65bd0f46af8642f88e2e4f8f1759918211a2fea18f0f3ead1ac516",
+   "child": "248343ef469befea",
+   "type": "contains"
+  },
+  {
+   "parent": "d092bea41c65bd0f46af8642f88e2e4f8f1759918211a2fea18f0f3ead1ac516",
+   "child": "376637fadf619744",
+   "type": "contains"
+  },
+  {
+   "parent": "d092bea41c65bd0f46af8642f88e2e4f8f1759918211a2fea18f0f3ead1ac516",
+   "child": "3efd9f768428f389",
+   "type": "contains"
+  },
+  {
+   "parent": "d092bea41c65bd0f46af8642f88e2e4f8f1759918211a2fea18f0f3ead1ac516",
+   "child": "5181917f887e66ce",
+   "type": "contains"
+  },
+  {
+   "parent": "d092bea41c65bd0f46af8642f88e2e4f8f1759918211a2fea18f0f3ead1ac516",
+   "child": "78c32dc0eb00159",
+   "type": "contains"
+  },
+  {
+   "parent": "d092bea41c65bd0f46af8642f88e2e4f8f1759918211a2fea18f0f3ead1ac516",
+   "child": "7ac0e16386d0e777",
+   "type": "contains"
+  },
+  {
+   "parent": "d092bea41c65bd0f46af8642f88e2e4f8f1759918211a2fea18f0f3ead1ac516",
+   "child": "85d58e0e1112933b",
+   "type": "contains"
+  },
+  {
+   "parent": "d092bea41c65bd0f46af8642f88e2e4f8f1759918211a2fea18f0f3ead1ac516",
+   "child": "94b1615f72a0f3d6",
+   "type": "contains"
+  },
+  {
+   "parent": "d092bea41c65bd0f46af8642f88e2e4f8f1759918211a2fea18f0f3ead1ac516",
+   "child": "9513a6ff66c43dbd",
+   "type": "contains"
+  },
+  {
+   "parent": "d092bea41c65bd0f46af8642f88e2e4f8f1759918211a2fea18f0f3ead1ac516",
+   "child": "c320d60ed0c3feae",
+   "type": "contains"
+  },
+  {
+   "parent": "d092bea41c65bd0f46af8642f88e2e4f8f1759918211a2fea18f0f3ead1ac516",
+   "child": "e0b5c23707d1d419",
+   "type": "contains"
+  }
+ ],
+ "source": {
+  "id": "d092bea41c65bd0f46af8642f88e2e4f8f1759918211a2fea18f0f3ead1ac516",
+  "type": "directory",
+  "target": ".\\"
+ },
+ "distro": {},
+ "descriptor": {
+  "name": "syft",
+  "version": "0.70.0",
+  "configuration": {
+   "configPath": "",
+   "verbosity": 0,
+   "quiet": false,
+   "output": [
+    "json=dependencies.json"
+   ],
+   "output-template-path": "",
+   "file": "",
+   "check-for-app-update": true,
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "log": {
+    "structured": false,
+    "level": "warn",
+    "file-location": ""
+   },
+   "catalogers": null,
+   "package": {
+    "cataloger": {
+     "enabled": true,
+     "scope": "Squashed"
+    },
+    "search-unindexed-archives": false,
+    "search-indexed-archives": true
+   },
+   "attest": {},
+   "file-metadata": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "digests": [
+     "sha256"
+    ]
+   },
+   "file-classification": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    }
+   },
+   "file-contents": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "skip-files-above-size": 1048576,
+    "globs": []
+   },
+   "secrets": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "AllLayers"
+    },
+    "additional-patterns": {},
+    "exclude-pattern-names": [],
+    "reveal-values": false,
+    "skip-files-above-size": 1048576
+   },
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "exclude": [],
+   "platform": "",
+   "name": "",
+   "parallelism": 1
+  }
+ },
+ "schema": {
+  "version": "6.2.0",
+  "url": "https://raw.githubusercontent.com/anchore/syft/main/schema/json/schema-6.2.0.json"
+ }
+}

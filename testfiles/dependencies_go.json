@@ -1,0 +1,194 @@
+{
+ "artifacts": [
+  {
+   "id": "511f49ec10956a6",
+   "name": "github.com/jedib0t/go-pretty/v6",
+   "version": "v6.4.4",
+   "type": "go-module",
+   "foundBy": "go-mod-file-cataloger",
+   "locations": [
+    {
+     "path": "go.mod"
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:jedib0t:go-pretty\\/v6:v6.4.4:*:*:*:*:*:*:*",
+    "cpe:2.3:a:jedib0t:go_pretty\\/v6:v6.4.4:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/github.com/jedib0t/go-pretty/v6@v6.4.4",
+   "metadataType": "GolangModMetadata",
+   "metadata": {}
+  },
+  {
+   "id": "6e96b259d395de3a",
+   "name": "github.com/mattn/go-runewidth",
+   "version": "v0.0.13",
+   "type": "go-module",
+   "foundBy": "go-mod-file-cataloger",
+   "locations": [
+    {
+     "path": "go.mod"
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:mattn:go-runewidth:v0.0.13:*:*:*:*:*:*:*",
+    "cpe:2.3:a:mattn:go_runewidth:v0.0.13:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/github.com/mattn/go-runewidth@v0.0.13",
+   "metadataType": "GolangModMetadata",
+   "metadata": {}
+  },
+  {
+   "id": "40d33c17d8ad79d8",
+   "name": "github.com/rivo/uniseg",
+   "version": "v0.2.0",
+   "type": "go-module",
+   "foundBy": "go-mod-file-cataloger",
+   "locations": [
+    {
+     "path": "go.mod"
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:rivo:uniseg:v0.2.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/github.com/rivo/uniseg@v0.2.0",
+   "metadataType": "GolangModMetadata",
+   "metadata": {}
+  },
+  {
+   "id": "459e97429a120c33",
+   "name": "golang.org/x/sys",
+   "version": "v0.0.0-20190412213103-97732733099d",
+   "type": "go-module",
+   "foundBy": "go-mod-file-cataloger",
+   "locations": [
+    {
+     "path": "go.mod"
+    }
+   ],
+   "licenses": [],
+   "language": "go",
+   "cpes": [
+    "cpe:2.3:a:golang:x\\/sys:v0.0.0-20190412213103-97732733099d:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:golang/golang.org/x/sys@v0.0.0-20190412213103-97732733099d",
+   "metadataType": "GolangModMetadata",
+   "metadata": {}
+  }
+ ],
+ "artifactRelationships": [
+  {
+   "parent": "d092bea41c65bd0f46af8642f88e2e4f8f1759918211a2fea18f0f3ead1ac516",
+   "child": "40d33c17d8ad79d8",
+   "type": "contains"
+  },
+  {
+   "parent": "d092bea41c65bd0f46af8642f88e2e4f8f1759918211a2fea18f0f3ead1ac516",
+   "child": "459e97429a120c33",
+   "type": "contains"
+  },
+  {
+   "parent": "d092bea41c65bd0f46af8642f88e2e4f8f1759918211a2fea18f0f3ead1ac516",
+   "child": "511f49ec10956a6",
+   "type": "contains"
+  },
+  {
+   "parent": "d092bea41c65bd0f46af8642f88e2e4f8f1759918211a2fea18f0f3ead1ac516",
+   "child": "6e96b259d395de3a",
+   "type": "contains"
+  }
+ ],
+ "source": {
+  "id": "d092bea41c65bd0f46af8642f88e2e4f8f1759918211a2fea18f0f3ead1ac516",
+  "type": "directory",
+  "target": ".\\"
+ },
+ "distro": {},
+ "descriptor": {
+  "name": "syft",
+  "version": "0.70.0",
+  "configuration": {
+   "configPath": "",
+   "verbosity": 0,
+   "quiet": false,
+   "output": [
+    "json=./bin/output/dependencies.json"
+   ],
+   "output-template-path": "",
+   "file": "",
+   "check-for-app-update": true,
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "log": {
+    "structured": false,
+    "level": "warn",
+    "file-location": ""
+   },
+   "catalogers": null,
+   "package": {
+    "cataloger": {
+     "enabled": true,
+     "scope": "Squashed"
+    },
+    "search-unindexed-archives": false,
+    "search-indexed-archives": true
+   },
+   "attest": {},
+   "file-metadata": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "digests": [
+     "sha256"
+    ]
+   },
+   "file-classification": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    }
+   },
+   "file-contents": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "skip-files-above-size": 1048576,
+    "globs": []
+   },
+   "secrets": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "AllLayers"
+    },
+    "additional-patterns": {},
+    "exclude-pattern-names": [],
+    "reveal-values": false,
+    "skip-files-above-size": 1048576
+   },
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "exclude": [],
+   "platform": "",
+   "name": "",
+   "parallelism": 1
+  }
+ },
+ "schema": {
+  "version": "6.2.0",
+  "url": "https://raw.githubusercontent.com/anchore/syft/main/schema/json/schema-6.2.0.json"
+ }
+}

@@ -1,0 +1,121 @@
+libraries:
+- source: github.com/jedib0t/go-pretty
+  submodule: v6
+  release: 2023-01-10
+  libraryTable:
+    manufacturer: jedib0t/go-pretty
+    software: go-pretty
+    summary: Table-writer and more in golang!
+    version: v6.4.4
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: jedib0t/go-pretty\nVersion: v6.4.4\nLicense: MIT\n\nTable-writer and more in golang!"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: github.com/mattn/go-runewidth
+  submodule: v0
+  release: 2021-05-24
+  libraryTable:
+    manufacturer: mattn/go-runewidth
+    software: go-runewidth
+    summary: wcwidth for golang
+    version: v0.0.13
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: mattn/go-runewidth\nVersion: v0.0.13\nLicense: MIT\n\nwcwidth for golang"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: github.com/rivo/uniseg
+  submodule: v0
+  release: 2020-07-11
+  libraryTable:
+    manufacturer: rivo/uniseg
+    software: uniseg
+    summary: Unicode Text Segmentation, Word Wrapping, and String Width Calculation in Go
+    version: v0.2.0
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: rivo/uniseg\nVersion: v0.2.0\nLicense: MIT\n\nUnicode Text Segmentation, Word Wrapping, and String Width Calculation in Go"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: golang.org/x/sys
+  submodule: v0
+  release: ""
+  libraryTable:
+    manufacturer: golang/sys
+    software: sys
+    summary: "[mirror] Go packages for low-level interaction with the operating system"
+    version: v0.0.0-20190412213103-97732733099d
+    license: BSD-3-Clause
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: golang/sys\nVersion: v0.0.0-20190412213103-97732733099d\nLicense: BSD-3-Clause\n\n[mirror] Go packages for low-level interaction with the operating system"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
