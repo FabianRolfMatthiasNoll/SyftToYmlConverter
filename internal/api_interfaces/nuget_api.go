@@ -40,9 +40,21 @@ type Nuget struct {
 			CommitID        string    `json:"commitId"`
 			CommitTimeStamp time.Time `json:"commitTimeStamp"`
 			CatalogEntry    struct {
-				IDAT                     string    `json:"@id"`
-				Type                     string    `json:"@type"`
-				Authors                  string    `json:"authors"`
+				IDAT             string `json:"@id"`
+				Type             string `json:"@type"`
+				Authors          string `json:"authors"`
+				DependencyGroups []struct {
+					ID           string
+					Type         string
+					Dependencies []struct {
+						IDAT         string `json:"@id"`
+						Type         string `json:"@type"`
+						ID           string `json:"id"`
+						Range        string `json:"range"`
+						Registration string `json:"registration"`
+					} `json:"dependencies"`
+					TargetFramework string `json:"targetFramework"`
+				} `json:"dependencyGroups"`
 				Description              string    `json:"description"`
 				IconURL                  string    `json:"iconUrl"`
 				ID                       string    `json:"id"`
@@ -63,61 +75,7 @@ type Nuget struct {
 			PackageContent string `json:"packageContent"`
 			Registration   string `json:"registration"`
 		} `json:"items"`
-		Parent string `json:"parent"`
-		Lower  string `json:"lower"`
-		Upper  string `json:"upper"`
 	} `json:"items"`
-	Context struct {
-		Vocab   string `json:"@vocab"`
-		Catalog string `json:"catalog"`
-		Xsd     string `json:"xsd"`
-		Items   struct {
-			ID        string `json:"@id"`
-			Container string `json:"@container"`
-		} `json:"items"`
-		CommitTimeStamp struct {
-			ID   string `json:"@id"`
-			Type string `json:"@type"`
-		} `json:"commitTimeStamp"`
-		CommitID struct {
-			ID string `json:"@id"`
-		} `json:"commitId"`
-		Count struct {
-			ID string `json:"@id"`
-		} `json:"count"`
-		Parent struct {
-			ID   string `json:"@id"`
-			Type string `json:"@type"`
-		} `json:"parent"`
-		Tags struct {
-			ID        string `json:"@id"`
-			Container string `json:"@container"`
-		} `json:"tags"`
-		Reasons struct {
-			Container string `json:"@container"`
-		} `json:"reasons"`
-		PackageTargetFrameworks struct {
-			ID        string `json:"@id"`
-			Container string `json:"@container"`
-		} `json:"packageTargetFrameworks"`
-		DependencyGroups struct {
-			ID        string `json:"@id"`
-			Container string `json:"@container"`
-		} `json:"dependencyGroups"`
-		Dependencies struct {
-			ID        string `json:"@id"`
-			Container string `json:"@container"`
-		} `json:"dependencies"`
-		PackageContent struct {
-			Type string `json:"@type"`
-		} `json:"packageContent"`
-		Published struct {
-			Type string `json:"@type"`
-		} `json:"published"`
-		Registration struct {
-			Type string `json:"@type"`
-		} `json:"registration"`
-	} `json:"@context"`
 }
 
 func (Nuget) ParseEmbeddedModules(syft *internal.Syft) (model.BuildInfo, error) {
@@ -235,6 +193,43 @@ func (api Nuget) SetInfoToModule(module *model.Module, pkgData []byte) {
 				module.Info.FullName = dep.Authors
 				module.Info.SPDX = dep.LicenseExpression
 				module.Info.Release = dep.Published
+			}
+		}
+	}
+}
+
+func (nuget Nuget) SetParents(model *model.BuildInfo) {
+	for i := range model.Modules {
+		module := &model.Modules[i]
+		pkgPaths := strings.Split(module.Path, "/")
+		pkgNameParent := pkgPaths[len(pkgPaths)-1]
+		url := nuget.CreateAPILink(pkgNameParent)
+		pkgData, err := nuget.GetData(url)
+		if err != nil {
+			log.Print(err)
+		}
+		err = json.Unmarshal(pkgData, &nuget)
+		if err != nil {
+			fmt.Println("[", color.Colorize(color.Red, "Err"), "] ", err)
+		}
+		for _, item := range nuget.Items {
+			for _, data := range item.Items {
+				if module.Version == data.CatalogEntry.Version {
+					for _, p := range data.CatalogEntry.DependencyGroups {
+						for _, d := range p.Dependencies {
+							for r := range model.Modules {
+								module := &model.Modules[r]
+								pkgPaths := strings.Split(module.Path, "/")
+								pkgName := pkgPaths[len(pkgPaths)-1]
+								if strings.Contains(d.ID, pkgName) {
+									if !contains(module.Parents, pkgNameParent) {
+										module.Parents = append(module.Parents, pkgNameParent)
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
