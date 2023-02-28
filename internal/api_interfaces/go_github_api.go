@@ -17,20 +17,6 @@ type Go struct {
 	Hash    string // Hash such as "h1:abcd1234"
 }
 
-func ParseEmbeddedModules(syft *internal.Syft) (model.BuildInfo, error) {
-
-	modules, err := SyftToModule(syft)
-	if err != nil {
-		return model.BuildInfo{}, err
-	}
-
-	return model.BuildInfo{
-		Path:    syft.Artifacts[0].Locations[0].Path,
-		Mod:     "Mod",
-		Modules: toModule(modules),
-	}, nil
-}
-
 func SyftToModule(syft *internal.Syft) ([]Go, error) {
 	var result []Go
 	for i, data := range syft.Artifacts {
@@ -49,6 +35,20 @@ func SyftToModule(syft *internal.Syft) ([]Go, error) {
 		result = append(result, next)
 	}
 	return result, nil
+}
+
+func ParseEmbeddedModules(syft *internal.Syft) (model.BuildInfo, error) {
+
+	modules, err := SyftToModule(syft)
+	if err != nil {
+		return model.BuildInfo{}, err
+	}
+
+	return model.BuildInfo{
+		Path:    syft.Artifacts[0].Locations[0].Path,
+		Mod:     "Mod",
+		Modules: toModule(modules),
+	}, nil
 }
 
 func toModule(modules []Go) []model.Module {
