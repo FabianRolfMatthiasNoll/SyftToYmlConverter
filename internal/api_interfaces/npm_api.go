@@ -14,18 +14,18 @@ import (
 	"github.com/gammazero/workerpool"
 )
 
+type Author struct {
+	Name string `json:"name"`
+	URL  string `json:"url"`
+}
+
 type NPM struct {
-	Name        string `json:"name"`
-	Version     string `json:"version"`
-	Description string `json:"description"`
-	Author      struct {
-		Name string `json:"name"`
-		URL  string `json:"url"`
-	} `json:"author"`
-	// Some packages have only a author as string not as struct.
-	Owner         string `json:"author"`
-	Homepage      string `json:"homepage"`
-	License       string `json:"license"`
+	Name          string      `json:"name"`
+	Version       string      `json:"version"`
+	Description   string      `json:"description"`
+	Author        interface{} `json:"author"`
+	Homepage      string      `json:"homepage"`
+	License       string      `json:"license"`
 	PublishConfig struct {
 		Access string `json:"access"`
 	} `json:"publishConfig"`
@@ -159,10 +159,12 @@ func (api NPM) SetInfoToModule(module *model.Module, pkgData []byte) error {
 
 	// Sometimes Author is a struct and sometimes a string => Created Owner as author string
 	// and Author as author struct
-	if api.Author.Name == "" {
-		module.Info.FullName = api.Owner
-	} else {
-		module.Info.FullName = api.Author.Name
+	if authorString, ok := api.Author.(string); ok {
+		module.Info.FullName = authorString
+
+	}
+	if authorStruct, ok := api.Author.(Author); ok {
+		module.Info.FullName = authorStruct.Name
 	}
 
 	module.Info.SPDX = api.License
