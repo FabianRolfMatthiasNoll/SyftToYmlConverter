@@ -12,5 +12,6 @@ func (Npm) FetchMetadata(syft *internal.Syft) (model.BuildInfo, error) {
 	var npm api_interfaces.NPM
 	models, _ := npm.ParseEmbeddedModules(syft)
 	npm.SetRepoInfo(syft, &models)
+	npm.SetParents(&models)
 	return models, nil
 }

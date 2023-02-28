@@ -186,3 +186,51 @@ func (NPM) getNameFromPath(path string) string {
 	path = path[30:]
 	return path
 }
+
+func (npm NPM) SetParents(model *model.BuildInfo) {
+	for i := range model.Modules {
+		module := &model.Modules[i]
+		pkgName := npm.getNameFromPath(module.Path)
+		url := npm.CreateAPILink(pkgName, module.Version)
+		pkgData, err := npm.GetData(url)
+		if err != nil {
+			log.Print(err)
+		}
+		err = json.Unmarshal(pkgData, &npm)
+		if err != nil {
+			fmt.Println("[", color.Colorize(color.Red, "Err"), "] ", err)
+		}
+		for p := range npm.Dependencies {
+			//fmt.Println("HELLO HERE IS DEP")
+			for r := range model.Modules {
+				module := &model.Modules[r]
+				pkgName := npm.getNameFromPath(module.Path)
+				if strings.Contains(p, pkgName) {
+					//fmt.Println("FOUND PARENT", module.Path)
+					if !contains(module.Parents, pkgName) {
+						module.Parents = append(module.Parents, pkgName)
+					}
+				}
+			}
+		}
+		// for p := range npm.DevDependencies {
+		// 	for r := range model.Modules {
+		// 		module := &model.Modules[r]
+		// 		pkgName := npm.getNameFromPath(module.Path)
+		// 		if strings.Contains(p, pkgName) {
+		// 			module.Parents = append(module.Parents, pkgName)
+		// 		}
+		// 	}
+		// }
+	}
+}
+
+func contains(s []string, str string) bool {
+	for _, v := range s {
+		if v == str {
+			return true
+		}
+	}
+
+	return false
+}
