@@ -12,5 +12,6 @@ func (Dotnet) FetchMetadata(syft *internal.Syft) (model.BuildInfo, error) {
 	var nuget api_interfaces.Nuget
 	models, _ := nuget.ParseEmbeddedModules(syft)
 	nuget.SetRepoInfo(syft, &models)
+	nuget.SetParents(&models)
 	return models, nil
 }
