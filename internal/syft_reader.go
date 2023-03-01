@@ -2,8 +2,8 @@ package internal
 
 import (
 	"encoding/json"
-	"io/ioutil"
 	"log"
+	"os"
 )
 
 type Syft struct {
@@ -117,7 +117,7 @@ type Syft struct {
 }
 
 func (syft *Syft) ReadJson(path string) (*Syft, error) {
-	file, err := ioutil.ReadFile(path)
+	file, err := os.ReadFile(path)
 	if err != nil {
 		log.Print(err)
 	}
