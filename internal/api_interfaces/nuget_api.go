@@ -98,7 +98,7 @@ func (Nuget) SyftToModule(syft *internal.Syft) ([]Module, error) {
 		data.Name, _ = Nuget.createPath(Nuget{}, data.Name)
 		next := Module{
 			Path: data.Name,
-			//subpath is maybe not needed
+			//TODO: subpath is maybe not needed
 			SubPath: data.Version[:strings.Index(data.Version, ".")],
 			Version: data.Version,
 			Hash:    data.ID,
