@@ -25,7 +25,7 @@ func NewManager(l Lang_Interface) *Manager {
 
 func (m *Manager) Run(syft *internal.Syft) error {
 	var models model.BuildInfo
-	libraries := model.Librarys{Libraries: []model.Library{}}
+	var libraries model.Librarys
 
 	models, _ = m.Lang.FetchMetadata(syft)
 
