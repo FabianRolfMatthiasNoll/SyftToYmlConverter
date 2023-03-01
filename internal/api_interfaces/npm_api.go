@@ -192,8 +192,9 @@ func (NPM) getNameFromPath(path string) string {
 func (npm NPM) SetParents(model *model.BuildInfo) {
 	for i := range model.Modules {
 		module := &model.Modules[i]
-		pkgName := npm.getNameFromPath(module.Path)
-		url := npm.CreateAPILink(pkgName, module.Version)
+		pkgNameParent := npm.getNameFromPath(module.Path)
+		fmt.Println("[", color.Colorize(color.Yellow, "Info"), "] Scanning Dependencies of:", pkgNameParent)
+		url := npm.CreateAPILink(pkgNameParent, module.Version)
 		pkgData, err := npm.GetData(url)
 		if err != nil {
 			log.Print(err)
@@ -203,14 +204,15 @@ func (npm NPM) SetParents(model *model.BuildInfo) {
 			fmt.Println("[", color.Colorize(color.Red, "Err"), "] ", err)
 		}
 		for p := range npm.Dependencies {
-			//fmt.Println("HELLO HERE IS DEP")
+			fmt.Println("[", color.Colorize(color.Yellow, "Info"), "] Found Dependency:", p)
 			for r := range model.Modules {
 				module := &model.Modules[r]
 				pkgName := npm.getNameFromPath(module.Path)
 				if strings.Contains(p, pkgName) {
-					//fmt.Println("FOUND PARENT", module.Path)
 					if !contains(module.Parents, pkgName) {
-						module.Parents = append(module.Parents, pkgName)
+						//TODO: functions sets itself as parent!!!
+						fmt.Println("[", color.Colorize(color.Green, "Set"), "] Set Parent Dependency to:", pkgName)
+						module.Parents = append(module.Parents, pkgNameParent)
 					}
 				}
 			}
