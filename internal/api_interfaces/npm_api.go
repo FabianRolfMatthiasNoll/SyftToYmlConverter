@@ -117,7 +117,10 @@ func (npm NPM) SetRepoInfo(syft *internal.Syft, info *model.BuildInfo) {
 			if err != nil {
 				log.Print(err)
 			}
-			npm.SetInfoToModule(module, pkgData)
+			err = npm.SetInfoToModule(module, pkgData)
+			if err != nil {
+				log.Print(err)
+			}
 		})
 	}
 	wp.StopWait()
@@ -210,8 +213,7 @@ func (npm NPM) SetParents(model *model.BuildInfo) {
 				pkgName := npm.getNameFromPath(module.Path)
 				if strings.Contains(p, pkgName) {
 					if !contains(module.Parents, pkgName) {
-						//TODO: functions sets itself as parent!!!
-						fmt.Println("[", color.Colorize(color.Green, "Set"), "] Set Parent Dependency to:", pkgName)
+						fmt.Println("[", color.Colorize(color.Green, "Set"), "] Set Parent:", pkgNameParent, "to:", pkgName)
 						module.Parents = append(module.Parents, pkgNameParent)
 					}
 				}
