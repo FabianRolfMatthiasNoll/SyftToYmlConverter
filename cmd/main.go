@@ -23,6 +23,8 @@ func main() {
 		manager = NewManager(handler.Go{})
 	case strings.Contains(syft.Artifacts[0].Purl, "npm"):
 		manager = NewManager(handler.Npm{})
+	case strings.Contains(syft.Artifacts[0].Purl, "conan"):
+		manager = NewManager(handler.Conan{})
 	}
 
 	err := manager.Run(syft)
