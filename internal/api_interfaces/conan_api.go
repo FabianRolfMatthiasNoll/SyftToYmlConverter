@@ -41,7 +41,6 @@ func GetMetadata(packageName string, version string) ([]byte, error) {
 
 func ParseConanOutput(output string) ConanInfo {
 	info := ConanInfo{}
-
 	lines := strings.Split(output, "\n")
 	for _, line := range lines {
 		if strings.HasPrefix(line, "name: ") {
