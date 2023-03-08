@@ -1,3 +1,28 @@
+header:
+  title: Off-The-Shelf Software
+  documentName: "Test Document"
+  documentNumber: "00001"
+  docversion: "0.0.0"
+frontPage:
+  creator:
+    name: "Fabian Noll"
+    profession: "Student"
+  reviewers:
+  - reviewer:
+      name: "Fabian Noll"
+      profession: "Student"
+  approver:
+    name: "Fabian Noll"
+    profession: "Student"
+  histories:
+  - history:
+      version: BA
+      beginOfValidation: ""
+      reasonAndContentColumn: Ersterstellung / First Issue
+referenceDocuments:
+  reference: "[PDP]"
+  description: Project Data Plan containing the overview about all documents belonging to the official documentation of this project.
+  documentNumber: "324"
 libraries:
 - source: github.com/jedib0t/go-pretty
   submodule: v6
