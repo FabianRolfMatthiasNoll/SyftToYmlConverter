@@ -1,0 +1,851 @@
+libraries:
+- source: https://www.npmjs.com/package/@angular-devkit/build-angular
+  submodule: "14"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: build-angular
+    summary: Angular Webpack Build Facade
+    version: 14.0.3
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 14.0.3\nLicense: MIT\n\nAngular Webpack Build Facade"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/@angular/animations
+  submodule: "14"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: animations
+    summary: Angular - animations integration with web-animations
+    version: 14.0.3
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 14.0.3\nLicense: MIT\n\nAngular - animations integration with web-animations"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/@angular/cli
+  submodule: "14"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: cli
+    summary: CLI tool for Angular
+    version: 14.0.3
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 14.0.3\nLicense: MIT\n\nCLI tool for Angular"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/@angular/common
+  submodule: "14"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: common
+    summary: Angular - commonly needed directives and services
+    version: 14.0.3
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 14.0.3\nLicense: MIT\n\nAngular - commonly needed directives and services"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/@angular/compiler
+  submodule: "14"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: compiler
+    summary: Angular - the compiler library
+    version: 14.0.3
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 14.0.3\nLicense: MIT\n\nAngular - the compiler library"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/@angular/compiler-cli
+  submodule: "14"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: compiler-cli
+    summary: Angular - the compiler CLI for Node.js
+    version: 14.0.3
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 14.0.3\nLicense: MIT\n\nAngular - the compiler CLI for Node.js"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/@angular/core
+  submodule: "14"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: core
+    summary: Angular - the core framework
+    version: 14.0.3
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 14.0.3\nLicense: MIT\n\nAngular - the core framework"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/@angular/forms
+  submodule: "14"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: forms
+    summary: Angular - directives and services for creating forms
+    version: 14.0.3
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 14.0.3\nLicense: MIT\n\nAngular - directives and services for creating forms"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/@angular/platform-browser
+  submodule: "14"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: platform-browser
+    summary: Angular - library for using Angular in a web browser
+    version: 14.0.3
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 14.0.3\nLicense: MIT\n\nAngular - library for using Angular in a web browser"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/@angular/platform-browser-dynamic
+  submodule: "14"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: platform-browser-dynamic
+    summary: Angular - library for using Angular in a web browser with JIT compilation
+    version: 14.0.3
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 14.0.3\nLicense: MIT\n\nAngular - library for using Angular in a web browser with JIT compilation"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/@angular/platform-server
+  submodule: "14"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: platform-server
+    summary: Angular - library for using Angular in Node.js
+    version: 14.0.3
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 14.0.3\nLicense: MIT\n\nAngular - library for using Angular in Node.js"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/@angular/router
+  submodule: "14"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: router
+    summary: Angular - the routing library
+    version: 14.0.3
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 14.0.3\nLicense: MIT\n\nAngular - the routing library"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/@popperjs/core
+  submodule: "2"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: core
+    summary: Tooltip and Popover Positioning Engine
+    version: 2.11.5
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 2.11.5\nLicense: MIT\n\nTooltip and Popover Positioning Engine"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/@types/jasminewd2
+  submodule: "2"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: jasminewd2
+    summary: TypeScript definitions for jasminewd2
+    version: 2.0.10
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 2.0.10\nLicense: MIT\n\nTypeScript definitions for jasminewd2"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/bootstrap
+  submodule: "5"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: bootstrap
+    summary: The most popular front-end framework for developing responsive, mobile first projects on the web.
+    version: 5.1.3
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 5.1.3\nLicense: MIT\n\nThe most popular front-end framework for developing responsive, mobile first projects on the web."
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/deptest
+  submodule: "0"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: deptest
+    summary: ""
+    version: 0.0.0
+    license: ""
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 0.0.0\nLicense: \n\n"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/engine.io
+  submodule: "6"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: engine.io
+    summary: The realtime engine behind Socket.IO. Provides the foundation of a bidirectional connection between client and server
+    version: 6.2.0
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 6.2.0\nLicense: MIT\n\nThe realtime engine behind Socket.IO. Provides the foundation of a bidirectional connection between client and server"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: |-
+      The software is needed as dependency of engine.io.
+      
+      There are no specialized requirements defined for this component. Requirements for the system are specified in [SRS].
+      
+      The OTS SW does not link with software outside the system.
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/jquery
+  submodule: "3"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: jquery
+    summary: JavaScript library for DOM operations
+    version: 3.6.0
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 3.6.0\nLicense: MIT\n\nJavaScript library for DOM operations"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/karma-chrome-launcher
+  submodule: "3"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: karma-chrome-launcher
+    summary: A Karma plugin. Launcher for Chrome and Chrome Canary.
+    version: 3.1.1
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 3.1.1\nLicense: MIT\n\nA Karma plugin. Launcher for Chrome and Chrome Canary."
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/karma-coverage
+  submodule: "2"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: karma-coverage
+    summary: A Karma plugin. Generate code coverage.
+    version: 2.2.0
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 2.2.0\nLicense: MIT\n\nA Karma plugin. Generate code coverage."
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/karma-jasmine
+  submodule: "5"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: karma-jasmine
+    summary: A Karma plugin - adapter for Jasmine testing framework.
+    version: 5.1.0
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 5.1.0\nLicense: MIT\n\nA Karma plugin - adapter for Jasmine testing framework."
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/karma-jasmine-html-reporter
+  submodule: "2"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: karma-jasmine-html-reporter
+    summary: A Karma plugin. Dynamically displays tests results at debug.html page
+    version: 2.0.0
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 2.0.0\nLicense: MIT\n\nA Karma plugin. Dynamically displays tests results at debug.html page"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/oidc-client
+  submodule: "1"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: oidc-client
+    summary: OpenID Connect (OIDC) & OAuth2 client library
+    version: 1.11.5
+    license: Apache-2.0
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 1.11.5\nLicense: Apache-2.0\n\nOpenID Connect (OIDC) & OAuth2 client library"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/popper.js
+  submodule: "1"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: popper.js
+    summary: A kickass library to manage your poppers
+    version: 1.16.1
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 1.16.1\nLicense: MIT\n\nA kickass library to manage your poppers"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/run-script-os
+  submodule: "1"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: run-script-os
+    summary: run-script-os is a tool that will let you use generic npm script commands that will pass through to os specific commands.
+    version: 1.1.6
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 1.1.6\nLicense: MIT\n\nrun-script-os is a tool that will let you use generic npm script commands that will pass through to os specific commands."
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/spdy
+  submodule: "4"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: spdy
+    summary: Implementation of the SPDY protocol on node.js.
+    version: 4.0.2
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 4.0.2\nLicense: MIT\n\nImplementation of the SPDY protocol on node.js."
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: |-
+      The software is needed as dependency of spdy.
+      
+      There are no specialized requirements defined for this component. Requirements for the system are specified in [SRS].
+      
+      The OTS SW does not link with software outside the system.
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/typescript
+  submodule: "4"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: typescript
+    summary: TypeScript is a language for application scale JavaScript development
+    version: 4.7.4
+    license: Apache-2.0
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 4.7.4\nLicense: Apache-2.0\n\nTypeScript is a language for application scale JavaScript development"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
+- source: https://www.npmjs.com/package/zone.js
+  submodule: "0"
+  release: ""
+  libraryTable:
+    manufacturer: ""
+    software: zone.js
+    summary: Zones for JavaScript
+    version: 0.11.6
+    license: MIT
+    function: Library
+    incorporated: Yes
+    levelOfConcern: Minor
+    answer1: "Manufacturer: \nVersion: 0.11.6\nLicense: MIT\n\nZones for JavaScript"
+    answer2: |-
+      The hardware specification is documented in [DPS].
+      The software specification is outlined in [SRS].
+    answer3: |-
+      Software Requirements are captured in [SRS]. Software Tests are described in [SVP] and [VTP]. Traceability is ensured by [EVDR].
+      
+      (1) The OTS SW was incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer4: ""
+    answer5: |-
+      Software Tests are described in [SVP] and [VTP].
+      
+      The OTS SW is incorporated in the device during installation of the system. There is no possibility to see, remove or change the system files.
+    answer6: |-
+      The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.
+      Configuration and Version of the OTS is kept under version control in Git
+      
+      The lifecycle of the OTS will be maintained using the [FOSS] process.
