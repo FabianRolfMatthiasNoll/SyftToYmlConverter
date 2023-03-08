@@ -36,7 +36,7 @@ func (m *Manager) Run(syft *internal.Syft) error {
 		log.Print(yamlErr)
 	}
 
-	fileName := "../test.yaml"
+	fileName := "../foss.yml"
 	yamlErr = os.WriteFile(fileName, yamlData, 0644)
 
 	if yamlErr != nil {
