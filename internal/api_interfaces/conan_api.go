@@ -104,6 +104,5 @@ func ParseConanOutput(output string) ConanInfo {
 			}
 		}
 	}
-
 	return info
 }
