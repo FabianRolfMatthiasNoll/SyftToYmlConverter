@@ -14,6 +14,60 @@ const (
 	answer6    = "The OTS SW is incorporated in the device during installation of the system and it will be ensured, that the user can not see, remove or change the system files.\nConfiguration and Version of the OTS is kept under version control in Git\n\nThe lifecycle of the OTS will be maintained using the [FOSS] process."
 )
 
+// Document is the main structure for generating the files
+type Document struct {
+	Header              Header              `validate:"required" yaml:"header"`
+	FrontPage           FrontPage           `validate:"required" yaml:"frontPage"`
+	ReferencedDocuments ReferencedDocuments `validate:"required" yaml:"referenceDocuments"`
+	Libraries           []Library           `validate:"required" yaml:"libraries"`
+}
+
+// Header has the specified information about the document itself
+type Header struct {
+	Title          string `validate:"required" yaml:"title"`
+	DocumentName   string `validate:"required" yaml:"documentName"`
+	DocumentNumber string `validate:"required" yaml:"documentNumber"`
+	DocVersion     string `validate:"required" yaml:"docversion"`
+}
+
+// FrontPage shows mandatory information at the first page
+type FrontPage struct {
+	Creator   Person     `validate:"required" yaml:"creator"`
+	Reviewers []Reviewer `validate:"required,dive" yaml:"reviewers"`
+	Approver  Person     `validate:"required" yaml:"approver"`
+	Histories []History  `validate:"required,dive" yaml:"histories"`
+}
+
+// Reviewer structure
+type Reviewer struct {
+	Reviewer Person `validate:"required" yaml:"reviewer"`
+}
+
+// Person described a contributor of the document
+type Person struct {
+	Name       string `validate:"required" yaml:"name"`
+	Profession string `validate:"required" yaml:"profession"`
+}
+
+// History structure
+type History struct {
+	History HistoryEntry `validate:"required" yaml:"history"`
+}
+
+// HistoryEntry contains informations of previous document versions
+type HistoryEntry struct {
+	Version                string `validate:"required" yaml:"version"`
+	BeginOfValidation      string `validate:"required" yaml:"beginOfValidation"`
+	ReasonAndContentColumn string `validate:"required" yaml:"reasonAndContentColumn"`
+}
+
+// ReferencedDocuments shows informations about documents which are referenced for another document
+type ReferencedDocuments struct {
+	Reference      string `validate:"required" yaml:"reference"`
+	Description    string `validate:"required" yaml:"description"`
+	DocumentNumber string `validate:"required" yaml:"documentNumber"`
+}
+
 type Librarys struct {
 	Libraries []Library `json:"libraries"`
 }
@@ -47,6 +101,9 @@ type TableMainTemplate struct {
 func ModelToLibrary(info *BuildInfo) Librarys {
 	libs := Librarys{Libraries: []Library{}}
 	for _, d := range info.Modules {
+		// if len(d.Parents) > 1 {
+		// 	continue
+		// }
 		var lib Library
 		lib.Source = d.Path
 		lib.Submodule = d.SubPath
