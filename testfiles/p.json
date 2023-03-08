@@ -1,0 +1,47 @@
+{
+  "name": "@babel/helper-annotate-as-pure",
+  "version": "7.16.7",
+  "description": "Helper function to annotate paths and nodes with #__PURE__ comment",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/babel/babel.git",
+    "directory": "packages/babel-helper-annotate-as-pure"
+  },
+  "homepage": "https://babel.dev/docs/en/next/babel-helper-annotate-as-pure",
+  "license": "MIT",
+  "publishConfig": { "access": "public" },
+  "main": "./lib/index.js",
+  "dependencies": { "@babel/types": "^7.16.7" },
+  "engines": { "node": ">=6.9.0" },
+  "author": "The Babel Team (https://babel.dev/team)",
+  "_id": "@babel/helper-annotate-as-pure@7.16.7",
+  "dist": {
+    "shasum": "bb2339a7534a9c128e3102024c60760a3a7f3862",
+    "integrity": "sha512-s6t2w/IPQVTAET1HitoowRGXooX8mCgtuP5195wD/QJPV6wYjpujCGF7JuMODVX2ZAJOf1GT6DT9MHEZvLOFSw==",
+    "tarball": "https://registry.npmjs.org/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.16.7.tgz",
+    "fileCount": 4,
+    "unpackedSize": 2667,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhzk05CRA9TVsSAnZWagAAo/YP/2cRpSm9flutJjJ9w/6t\nGIYJ9ZD8TwE6hlaGwQS7395PdhcNdjJpbA41TuyuVG7R1mt/VTrIeHUdmkyK\nL+Z2aqOPzbLYtP4Uo/1nm56mD5+sAzlNa8n0xAyXoobAXB4SvgCFhXZzzkgP\nszHlb0XRSa/1kJ35wb9t16TIVJuddTGZolTwCdD/GdGwrmgtwmjXTlygphdo\nNCt58UYe8SluqXOY6OWCLxuU05QiQeXODdW0UaR7wMWCtu3IvDP/ukEoboMg\nc0DuIK4j2aFJ4zZUKnEezV1BisPRqh/5kz2EGUlm7AJiZKdbt6ZNIqI2u4w9\n8gD9ew8+WbFEGMaNo3pqbPXf2zzd8nmH9Q5IO7GxIUQhbKMPFZZlJ/M+CkkC\ncJlQN7coWWSWlUrqagd9/+OK4gkWcG4puW5UHLONhnspw4PZxar3/UK99H18\nyykQUJJXhmF80J+pMEAZ7Mu1+aM1JqJicZbLxoP3ES5Mx5wcFaJyKFvA8mbj\ntFiOwaSPX8TMiczeOFMez5Wscx74A3xTH7S25k65T419QdU60DTE/ivo/Z/n\nYrvQUiAhO5NnidptwSk0v/zLgQJRdY+WMMF2TeQClkqBrmlCMeeRasUK37kT\nuPf/BofOIGz6ehgUn0pStxlWW8ci3rNz3Fk9AfMOdqsxVZjkCAhRh77oVqxs\nnXQC\r\n=xS4G\r\n-----END PGP SIGNATURE-----\r\n",
+    "signatures": [
+      {
+        "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+        "sig": "MEUCIBvQfWo7v+pF9kQOj2To0bI/dJPKqDdCTIhENawNkbKlAiEAx5VNKN2BZzCi0SQfcf/7V9USaPl7bV5h4G3vlIkP09c="
+      }
+    ]
+  },
+  "_npmUser": { "name": "nicolo-ribaudo", "email": "nicolo.ribaudo@gmail.com" },
+  "directories": {},
+  "maintainers": [
+    { "name": "hzoo", "email": "hi@henryzoo.com" },
+    { "name": "loganfsmyth", "email": "loganfsmyth@gmail.com" },
+    { "name": "danez", "email": "npm@tschinder.de" },
+    { "name": "existentialism", "email": "bng412@gmail.com" },
+    { "name": "nicolo-ribaudo", "email": "nicolo.ribaudo@gmail.com" },
+    { "name": "jlhwung", "email": "i@jhuang.me" }
+  ],
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/helper-annotate-as-pure_7.16.7_1640910137490_0.33849507088073927"
+  },
+  "_hasShrinkwrap": false
+}
