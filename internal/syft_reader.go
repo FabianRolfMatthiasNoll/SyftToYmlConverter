@@ -16,14 +16,20 @@ type Syft struct {
 		Locations []struct {
 			Path string `json:"path"`
 		} `json:"locations"`
-		Licenses     []interface{} `json:"licenses"`
-		Language     string        `json:"language"`
-		Cpes         []string      `json:"cpes"`
-		Purl         string        `json:"purl"`
-		MetadataType string        `json:"metadataType"`
+		//Licenses     []interface{} `json:"licenses"`
+		Licenses     []string `json:"licenses"`
+		Language     string   `json:"language"`
+		Cpes         []string `json:"cpes"`
+		Purl         string   `json:"purl"`
+		MetadataType string   `json:"metadataType"`
 		Metadata     struct {
 		} `json:"metadata"`
 	} `json:"artifacts"`
+	ArtifactRelationships []struct {
+		Parent string `json:"parent"`
+		Child  string `json:"child"`
+		Type   string `json:"type"`
+	} `json:"artifactRelationships"`
 	Source struct {
 		ID     string `json:"id"`
 		Type   string `json:"type"`
