@@ -16,7 +16,7 @@ import (
 
 var (
 	//nolint:gochecknoglobals // singleton instance for github
-	githubClient = newGithub("33e1d1373efba32ce669ff782812f6aed422714c")
+	githubClient = newGithub("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")
 
 	// regex to split github address into owner/reponame
 	githubRegEx = regexp.MustCompile(`^github\.com/([^/]+)/([^/]+)$`)
