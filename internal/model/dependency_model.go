@@ -7,13 +7,14 @@ type SBOM struct {
 }
 
 type Dependencies struct {
+	ID         string   `json:"id"`
 	ImportName string   `json:"importname"`
-	Language   string   `json:"language"`
 	Version    string   `json:"version"`
 	Licenses   []string `json:"licenses"`
+	Language   string   `json:"language"`
 	//Not sure if we should keep purl for tool independency
 	Purl string `json:"purl"`
 	//Url      string `json:"url"`
-	ID string `json:"id"`
 	//TopLevel bool   `json:"toplevel"`
+
 }
