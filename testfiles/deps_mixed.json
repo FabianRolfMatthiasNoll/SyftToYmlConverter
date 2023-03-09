@@ -23,6 +23,32 @@
    }
   },
   {
+    "id": "78c32dc0eb00159",
+    "name": "System.Reflection.Primitives",
+    "version": "4.3.0",
+    "type": "dotnet",
+    "foundBy": "dotnet-deps-cataloger",
+    "locations": [
+     {
+      "path": "Burgerama Burger Shop App\\bin\\Debug\\net6.0\\Burgerama Burger Shop App.deps.json"
+     }
+    ],
+    "licenses": [],
+    "language": "dotnet",
+    "cpes": [
+     "cpe:2.3:a:System.Reflection.Primitives:System.Reflection.Primitives:4.3.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:dotnet/System.Reflection.Primitives@4.3.0",
+    "metadataType": "DotnetDepsMetadata",
+    "metadata": {
+     "name": "System.Reflection.Primitives",
+     "version": "4.3.0",
+     "path": "system.reflection.primitives/4.3.0",
+     "sha512": "sha512-5RXItQz5As4xN2/YUDxdpsEkMhvw3e6aNveFXUn4Hl/udNTCNhnKp8lT9fnc3MhvGKh1baak5CovpuQUXHAlIA==",
+     "hashPath": "system.reflection.primitives.4.3.0.nupkg.sha512"
+    }
+   },
+  {
    "id": "c74d3f5ed63460a8",
    "name": "fmt",
    "version": "8.1.0",
@@ -65,6 +91,56 @@
    "metadataType": "GolangModMetadata",
    "metadata": {}
   },
+  {
+    "id": "2b8d1784333effbc",
+    "name": "selfsigned",
+    "version": "2.0.1",
+    "type": "npm",
+    "foundBy": "javascript-lock-cataloger",
+    "locations": [
+     {
+      "path": "Deptest\\ClientApp\\package-lock.json"
+     }
+    ],
+    "licenses": [],
+    "language": "javascript",
+    "cpes": [
+     "cpe:2.3:a:selfsigned:selfsigned:2.0.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:*:selfsigned:2.0.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:npm/selfsigned@2.0.1",
+    "metadataType": "NpmPackageLockJsonMetadata",
+    "metadata": {
+     "resolved": "https://registry.npmjs.org/selfsigned/-/selfsigned-2.0.1.tgz",
+     "integrity": "sha512-LmME957M1zOsUhG+67rAjKfiWFox3SBxE/yymatMZsAx+oMrJ0YQ8AToOnyCm7xbeg2ep37IHLxdu0o2MavQOQ=="
+    }
+   },
+   {
+    "id": "94b1615f72a0f3d6",
+    "name": "System.Text.Encoding",
+    "version": "4.3.0",
+    "type": "dotnet",
+    "foundBy": "dotnet-deps-cataloger",
+    "locations": [
+     {
+      "path": "Burgerama Burger Shop App\\bin\\Debug\\net6.0\\Burgerama Burger Shop App.deps.json"
+     }
+    ],
+    "licenses": [],
+    "language": "dotnet",
+    "cpes": [
+     "cpe:2.3:a:System.Text.Encoding:System.Text.Encoding:4.3.0:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:dotnet/System.Text.Encoding@4.3.0",
+    "metadataType": "DotnetDepsMetadata",
+    "metadata": {
+     "name": "System.Text.Encoding",
+     "version": "4.3.0",
+     "path": "system.text.encoding/4.3.0",
+     "sha512": "sha512-BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
+     "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
+    }
+   },
   {
    "id": "ee9a4ec0bfec8392",
    "name": "github.com/fatih/color",
@@ -146,6 +222,30 @@
    "metadataType": "GolangModMetadata",
    "metadata": {}
   },
+  {
+    "id": "643df8c7f78025fb",
+    "name": "semver",
+    "version": "5.7.1",
+    "type": "npm",
+    "foundBy": "javascript-lock-cataloger",
+    "locations": [
+     {
+      "path": "Deptest\\ClientApp\\package-lock.json"
+     }
+    ],
+    "licenses": [],
+    "language": "javascript",
+    "cpes": [
+     "cpe:2.3:a:semver:semver:5.7.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:*:semver:5.7.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:npm/semver@5.7.1",
+    "metadataType": "NpmPackageLockJsonMetadata",
+    "metadata": {
+     "resolved": "https://registry.npmjs.org/semver/-/semver-5.7.1.tgz",
+     "integrity": "sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ=="
+    }
+   },
   {
    "id": "65fce241b81054a",
    "name": "github.com/golang/protobuf",
