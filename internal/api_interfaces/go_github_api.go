@@ -19,11 +19,11 @@ type Go struct {
 
 func SyftToModule(syft *internal.Syft) ([]Go, error) {
 	var result []Go
-	for i, data := range syft.Artifacts {
-		//scanning the binary of a go file returns as first element itself
-		if i == 0 {
-			continue
-		}
+	for _, data := range syft.Artifacts {
+		// //scanning the binary of a go file returns as first element itself
+		// if i == 0 {
+		// 	continue
+		// }
 		data.Name = removeExtraPath(data.Name)
 		next := Go{
 			Path:    data.Name,
