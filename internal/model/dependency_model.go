@@ -1,20 +1,20 @@
 package model
 
 type SBOM struct {
-	Name         string   `json:"name"`
-	Languages    []string `json:"languages"`
+	Name         string
+	Languages    []string
 	Dependencies []Dependencies
 }
 
 type Dependencies struct {
-	ID         string   `json:"id"`
-	ImportName string   `json:"importname"`
-	Version    string   `json:"version"`
-	Licenses   []string `json:"licenses"`
-	Language   string   `json:"language"`
+	ID         string
+	ImportName string
+	Version    string
+	Licenses   []string
+	Language   string
 	//Not sure if we should keep purl for tool independency
-	Purl string `json:"purl"`
-	//Url      string `json:"url"`
-	//TopLevel bool   `json:"toplevel"`
+	Purl string
+	//Url      string
+	//TopLevel bool
 
 }
