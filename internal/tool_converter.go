@@ -1,6 +1,7 @@
 package internal
 
 import (
+	"sort"
 	"strings"
 	"syfttoymlconverter/internal/model"
 )
@@ -33,7 +34,14 @@ func ToolToDependencies(syft *Syft) *model.SBOM {
 			ID:   d.ID,
 		})
 	}
+	sortDependenciesByLanguage(result)
 	return result
+}
+
+func sortDependenciesByLanguage(sbom *model.SBOM) {
+	sort.Slice(sbom.Dependencies, func(i, j int) bool {
+		return sbom.Dependencies[i].Language < sbom.Dependencies[j].Language
+	})
 }
 
 func contains(s []string, e string) bool {
