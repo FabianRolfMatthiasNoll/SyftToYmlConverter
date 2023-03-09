@@ -35,6 +35,7 @@ func ToolToDependencies(syft *Syft) *model.SBOM {
 		})
 	}
 	sortDependenciesByLanguage(result)
+	//sortLanguages(result)
 	return result
 }
 
@@ -43,6 +44,12 @@ func sortDependenciesByLanguage(sbom *model.SBOM) {
 		return sbom.Dependencies[i].Language < sbom.Dependencies[j].Language
 	})
 }
+
+// func sortLanguages(sbom *model.SBOM) {
+// 	sort.Slice(sbom.Languages, func(i, j int) bool {
+// 		return sbom.Languages[i] < sbom.Languages[j]
+// 	})
+// }
 
 func contains(s []string, e string) bool {
 	for _, a := range s {
