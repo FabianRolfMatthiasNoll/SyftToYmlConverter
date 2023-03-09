@@ -351,3 +351,6 @@ MigrationBackup/
 fosser.exe
 test.yaml
 test.yaml
+pkg.json
+pkg.yml
+fosser
