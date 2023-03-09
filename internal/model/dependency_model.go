@@ -9,6 +9,8 @@ type Dependencies struct {
 		Version  string   `json:"version"`
 		Licenses []string `json:"licenses"`
 		Purl     string   `json:"purl"`
+		Url      string   `json:"url"`
 		ID       string   `json:"id"`
+		TopLevel bool     `json:"toplevel"`
 	}
 }
