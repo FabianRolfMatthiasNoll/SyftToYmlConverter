@@ -15,3 +15,10 @@ func (Npm) FetchMetadata(syft *internal.Syft) (model.BuildInfo, error) {
 	npm.SetParents(&models)
 	return models, nil
 }
+
+func (Npm) GetInfo(build *model.BuildInfo, dependency model.Dependency) {
+	var npm api_interfaces.NPM
+	module := npm.MakeModuleFromDependency(dependency)
+	npm.SetRepo(&module)
+	build.Modules = append(build.Modules, module)
+}

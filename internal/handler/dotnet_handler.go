@@ -15,3 +15,8 @@ func (Dotnet) FetchMetadata(syft *internal.Syft) (model.BuildInfo, error) {
 	nuget.SetParents(&models)
 	return models, nil
 }
+
+func (Dotnet) GetInfo(build *model.BuildInfo, dependency model.Dependency) {
+	//MakeModuleFromDependency(build, dependency)
+	// dsf
+}
