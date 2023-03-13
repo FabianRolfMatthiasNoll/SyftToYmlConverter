@@ -3,10 +3,10 @@ package model
 type SBOM struct {
 	Name         string
 	Languages    []string
-	Dependencies []Dependencies
+	Dependencies []Dependency
 }
 
-type Dependencies struct {
+type Dependency struct {
 	ID         string
 	ImportName string
 	Version    string
@@ -15,6 +15,5 @@ type Dependencies struct {
 	//Not sure if we should keep purl for tool independency
 	Purl string
 	//Url      string
-	//TopLevel bool
-
+	TopLevel bool
 }
