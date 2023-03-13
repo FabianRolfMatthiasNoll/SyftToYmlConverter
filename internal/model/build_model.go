@@ -12,6 +12,7 @@ type BuildInfo struct {
 }
 
 type Module struct {
+	Name    string
 	Path    string
 	SubPath string
 	Version string
