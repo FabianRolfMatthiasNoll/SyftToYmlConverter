@@ -21,6 +21,8 @@ type Author struct {
 	URL  string `json:"url"`
 }
 
+// because the release date is not in the version specific api call
+// we have to make a generall request and parse by the version
 type newNPM struct {
 	Name        string             `json:"name"`
 	Description string             `json:"description"`
