@@ -17,21 +17,23 @@ func ToolToDependencies(syft *Syft) *model.SBOM {
 			result.Languages = append(result.Languages, language)
 		}
 		// TopLevel is really only important for docker and angular still have to think of the way
-		// var toplevel = false
-		// for _, l := range syft.ArtifactRelationships {
-		// 	if l.Parent == d.ID {
-		// 		toplevel = true
-		// 	}
-		// }
+		var toplevel = true
+		for _, l := range syft.ArtifactRelationships {
+			//Syft also list every package as child of itself
+			if l.Child == d.ID && l.Parent != syft.Source.ID {
+				toplevel = false
+			}
+		}
 
-		result.Dependencies = append(result.Dependencies, model.Dependencies{
+		result.Dependencies = append(result.Dependencies, model.Dependency{
 			ImportName: d.Name,
 			Language:   language,
 			Version:    d.Version,
 			Licenses:   d.Licenses,
 			//Not sure if we should keep purl for tool independency
-			Purl: d.Purl,
-			ID:   d.ID,
+			Purl:     d.Purl,
+			ID:       d.ID,
+			TopLevel: toplevel,
 		})
 	}
 	sortDependenciesByLanguage(result)
