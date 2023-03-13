@@ -101,9 +101,9 @@ type TableMainTemplate struct {
 func ModelToLibrary(info *BuildInfo) Librarys {
 	libs := Librarys{Libraries: []Library{}}
 	for _, d := range info.Modules {
-		// if len(d.Parents) > 1 {
-		// 	continue
-		// }
+		if len(d.Parents) > 3 {
+			continue
+		}
 		var lib Library
 		lib.Source = d.Path
 		lib.Submodule = d.SubPath
