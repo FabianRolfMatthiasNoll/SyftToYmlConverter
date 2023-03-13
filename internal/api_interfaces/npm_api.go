@@ -6,17 +6,75 @@ import (
 	"io"
 	"log"
 	"net/http"
+	"os"
 	"strings"
 	"syfttoymlconverter/internal"
 	"syfttoymlconverter/internal/model"
 
 	"github.com/TwiN/go-color"
 	"github.com/gammazero/workerpool"
+	"gopkg.in/yaml.v2"
 )
 
 type Author struct {
 	Name string `json:"name"`
 	URL  string `json:"url"`
+}
+
+type newNPM struct {
+	Name        string             `json:"name"`
+	Description string             `json:"description"`
+	Versions    map[string]Version `json:"versions"`
+	Time        map[string]string  `json:"time"`
+}
+
+type Version struct {
+	Name    string      `json:"name"`
+	Version string      `json:"version"`
+	Author  interface{} `json:"author"`
+	License string      `json:"license"`
+}
+
+func (npm newNPM) WriteData() {
+	req, err := http.NewRequest("GET", "https://registry.npmjs.org/zone.js", nil)
+	if err != nil {
+		fmt.Println("[", color.Colorize(color.Red, "Err"), "] ", err)
+	}
+	res, err := http.DefaultClient.Do(req)
+	if err != nil {
+		fmt.Println("[", color.Colorize(color.Red, "Err"), "] ", err)
+
+	}
+
+	defer func(Body io.ReadCloser) {
+		err := Body.Close()
+		if err != nil {
+			return
+		}
+	}(res.Body)
+
+	body, readErr := io.ReadAll(res.Body)
+	if readErr != nil {
+		fmt.Println("[", color.Colorize(color.Red, "Err"), "] ", readErr)
+
+	}
+
+	err = json.Unmarshal(body, &npm)
+	if err != nil {
+		fmt.Println("[", color.Colorize(color.Red, "Err"), "] ", err)
+	}
+
+	yamlData, yamlErr := yaml.Marshal(&npm)
+	if yamlErr != nil {
+		log.Print(yamlErr)
+	}
+
+	fileName2 := "../npm.yml"
+	yamlErr = os.WriteFile(fileName2, yamlData, 0644)
+
+	if yamlErr != nil {
+		log.Print(yamlErr)
+	}
 }
 
 type NPM struct {
@@ -74,7 +132,7 @@ func (npm NPM) ParseEmbeddedModules(syft *internal.Syft) (model.BuildInfo, error
 func (npm NPM) SyftToModule(syft *internal.Syft) ([]Module, error) {
 	var result []Module
 	for _, data := range syft.Artifacts {
-		data.Name, _ = npm.createPath(data.Name)
+		data.Name = npm.createPath(data.Name)
 		next := Module{
 			Path: data.Name,
 			//subpath is maybe not needed
@@ -152,25 +210,25 @@ func (NPM) GetData(url string) ([]byte, error) {
 	return body, nil
 }
 
-func (api NPM) SetInfoToModule(module *model.Module, pkgData []byte) error {
-	err := json.Unmarshal(pkgData, &api)
+func (npm NPM) SetInfoToModule(module *model.Module, pkgData []byte) error {
+	err := json.Unmarshal(pkgData, &npm)
 	if err != nil {
 		fmt.Println("[", color.Colorize(color.Red, "Err"), "] ", err)
 		return err
 	}
-	module.Info.Description = api.Description
+	module.Info.Description = npm.Description
 
 	// Sometimes Author is a struct and sometimes a string => Created Owner as author string
 	// and Author as author struct
-	if authorString, ok := api.Author.(string); ok {
+	if authorString, ok := npm.Author.(string); ok {
 		module.Info.FullName = authorString
 
 	}
-	if authorStruct, ok := api.Author.(Author); ok {
+	if authorStruct, ok := npm.Author.(Author); ok {
 		module.Info.FullName = authorStruct.Name
 	}
 
-	module.Info.SPDX = api.License
+	module.Info.SPDX = npm.License
 	//cant extract time of release of version specific package
 	//module.Info.Release =
 	return nil
@@ -182,9 +240,9 @@ func (NPM) CreateAPILink(packageName, version string) string {
 	return url
 }
 
-func (NPM) createPath(name string) (string, error) {
+func (NPM) createPath(name string) string {
 	path := fmt.Sprintf("https://www.npmjs.com/package/%s", name)
-	return path, nil
+	return path
 }
 
 func (NPM) getNameFromPath(path string) string {
@@ -239,4 +297,27 @@ func contains(s []string, str string) bool {
 	}
 
 	return false
+}
+
+func (npm NPM) MakeModuleFromDependency(lib model.Dependency) model.Module {
+	module := model.Module{
+		Name:    lib.ImportName,
+		Path:    npm.createPath(lib.ImportName),
+		Version: lib.Version,
+		Hash:    lib.ID,
+	}
+	return module
+}
+
+func (npm NPM) SetRepo(module *model.Module) {
+	url := npm.CreateAPILink(module.Name, module.Version)
+	fmt.Println("[", color.Colorize(color.Yellow, "Fetch"), "] Module:", module.Name, "from:", url)
+	pkgData, err := npm.GetData(url)
+	if err != nil {
+		log.Print(err)
+	}
+	err = npm.SetInfoToModule(module, pkgData)
+	if err != nil {
+		log.Print(err)
+	}
 }
